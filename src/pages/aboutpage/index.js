@@ -8,6 +8,7 @@ import {
   AboutMeDetails,
   FooterWrapper,
   ButtonContainer,
+  Inner,
 
 } from "./style";
 
@@ -42,13 +43,14 @@ const AboutMe = () => {
             With a problem-solving mindset, I help my clients to create designs that are aesthetically pleasing, technically refined and easy to use.
             I enjoy empathizing with people and crafting digital experiences, that empower users and boost business growth.
             <ButtonContainer>
-              <Button />
+              <Button text={'View my Resume'} />
             </ButtonContainer>
           
         </AboutMeDetails>
       </AboutDetails>
 
       <FooterWrapper>
+      <Inner></Inner>
         <Footer />
       </FooterWrapper>
     </AboutWrapper>

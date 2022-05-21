@@ -34,7 +34,7 @@ export const AboutWrapper = styled.div`
 export const AboutHeader = styled.div`
   margin: 0 auto;
   padding: 42px 0 70px;
-
+  font-weight: 400;
   @media screen and (max-width: 700px) {
     padding: 28px 0 37px;
    }
@@ -71,6 +71,8 @@ export const AboutMeDetails = styled.p`
   padding-left: 45px;
   display: flex;
   flex-direction: column;
+  font-weight: 200;
+  font-size: ;
 
   @media screen and (max-width: 700px) {
     padding: 30px 20px;
@@ -86,4 +88,15 @@ export const ButtonContainer = styled.div`
 export const FooterWrapper = styled.div`
   padding: 4rem 0 1.5rem;
 
+`;
+
+export const Inner = styled.div`
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
 `;
