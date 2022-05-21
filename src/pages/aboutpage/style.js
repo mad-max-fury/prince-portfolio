@@ -44,6 +44,7 @@ export const AboutDetails = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 20px;
 
   @media screen and (max-width: 700px) {
    flex-direction: column; 
