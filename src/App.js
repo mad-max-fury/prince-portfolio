@@ -1,15 +1,10 @@
-import { Button, Footer, Navbar, ProjectCard, Text } from "./components";
-import { BrowserRouter as Router } from "react-router-dom";
+import { useState } from "react";
+import { AppRouter } from "./appRouter";
 function App() {
+  const [showModal, setShowModal] = useState(true);
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Button />
-        {/* <Text /> */}
-        <ProjectCard />
-        <Footer />
-      </Router>
+      <AppRouter showModal={showModal} SetShowModal={setShowModal} />
     </div>
   );
 }
