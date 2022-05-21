@@ -1,8 +1,14 @@
 import React from "react";
-import { Container } from "./style";
+import { Footer } from "../../components";
+import { Container, Inner } from "./style";
 
 const Projects = () => {
-  return <Container>Projects</Container>;
+  return (
+    <Container>
+      <Inner></Inner>
+      <Footer />
+    </Container>
+  );
 };
 
 export { Projects };

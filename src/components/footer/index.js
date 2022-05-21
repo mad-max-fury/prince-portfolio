@@ -2,8 +2,15 @@ import React from "react";
 import { FaBehance, FaTwitter, FaLinkedinIn, FaDribbble } from "react-icons/fa";
 import { FootWrap, FootIcons, FootText } from "./style";
 const Footer = () => {
+  const pathname = window?.location?.pathname;
   return (
-    <FootWrap>
+    <FootWrap
+      style={
+        pathname === "/"
+          ? { width: "fit-content", margin: "0 auto" }
+          : { backgroundColor: "none" }
+      }
+    >
       <FootIcons>
         <a href="http://behance.net/princechijioke">
           <FaBehance size={20} />
@@ -18,9 +25,11 @@ const Footer = () => {
           <FaDribbble size={20} />
         </a>
       </FootIcons>
-      <FootText>
-        Designed by me, Developed by <span>Devcruz</span>
-      </FootText>
+      {pathname !== "/" ? (
+        <FootText>
+          Designed by me, Developed by <span>Devcruz</span>
+        </FootText>
+      ) : null}
     </FootWrap>
   );
 };
