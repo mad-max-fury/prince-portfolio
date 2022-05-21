@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../../colors";
-const Text = () => {
-  return <TextHeading>Hello</TextHeading>;
+const Text = ({text}) => {
+  return <TextHeading>{text}</TextHeading>;
 };
 
 export { Text };
@@ -11,6 +11,7 @@ const TextHeading = styled.h1`
   position: relative;
   width: fit-content;
   height: fit-content;
+  color: ${colors.white};
   &:after {
     content: "";
     height: 8px;
