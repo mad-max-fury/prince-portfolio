@@ -13,4 +13,8 @@ export const Container = styled.main`
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  @media screen and (max-width: 700px) {
+    object-fit: contain;
+    background-size: cover;
+  }
 `;

@@ -9,8 +9,11 @@ export const Container = styled.main`
   z-index: 10;
   background-color: ${colors.main_color};
   background-image: url(${patternBg});
-  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  @media screen and (max-width: 700px) {
+    object-fit: contain;
+    background-size: cover;
+  }
 `;
