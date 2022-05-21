@@ -4,8 +4,10 @@ import { colors } from "../../colors";
 export const FootWrap = styled.div`
   height: 80px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid red;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 10;
   @media (max-width: 500px) {
