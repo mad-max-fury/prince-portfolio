@@ -29,3 +29,9 @@ export const Inner = styled.div`
   margin: 0 auto;
 `;
 export const Paragraph = styled.p``;
+
+export const WidgetWrap = styled.div``;
+export const Widget = styled.div``;
+export const Main = styled.main`
+  height: 90%;
+`;

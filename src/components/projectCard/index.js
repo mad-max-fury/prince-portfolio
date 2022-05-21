@@ -65,6 +65,7 @@ const TextWrap = styled.div`
     font-size: 1.6rem;
     font-weight: 400;
     height: 40%;
+    text-align: start;
   }
 `;
 const Tag = styled.div`

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../../colors";
-const Text = ({ tex }) => {
-  return <TextHeading>{tex}</TextHeading>;
+const Text = ({ tex, size }) => {
+  return <TextHeading size={size}>{tex}</TextHeading>;
 };
 
 export { Text };
@@ -11,7 +11,7 @@ const TextHeading = styled.h1`
   position: relative;
   width: fit-content;
   height: fit-content;
-  font-size: 7rem;
+  font-size: ${({ size }) => (size ? size : "7rem")};
   margin: 0;
   padding: 0;
   color: ${colors.white};

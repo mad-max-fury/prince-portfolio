@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../colors";
 
 export const FeatureCardWrapper = styled.div`
-  width: calc(34rem - 0rem);
+  width: calc(40rem - 0rem);
   gap: 1.5rem;
 
   display: flex;
@@ -12,7 +12,7 @@ export const FeatureCardWrapper = styled.div`
 
   background-color: ${colors.secondary_color};
   color: #fff;
-  height: 52.2rem;
+  height: 46.2rem;
   border-radius: 15px;
 `;
 export const FeatureCardIcon = styled.div`
@@ -32,7 +32,7 @@ export const FeatureCardTitle = styled.h3`
   line-height: 21.8px;
 `;
 export const FeatureCardDescription = styled.p`
-  text-align: center;
+  text-align: start;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 19px;
