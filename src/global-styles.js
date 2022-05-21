@@ -56,7 +56,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     p {
-        font-size: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align:center;
+        color: ${colors.white};
     }
     
 `;
