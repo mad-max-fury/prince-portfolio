@@ -28,7 +28,7 @@ const AboutMe = () => {
   <Container>
     <AboutWrapper>
       <AboutHeader>
-        <Text text='About Me' />
+        <Text tex='About Me' />
       </AboutHeader>
       
       <AboutDetails>
