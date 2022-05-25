@@ -12,7 +12,6 @@ const LandingPage = () => {
         </Paragraph>
         <Button text={"View my Resume"} />
       </Inner>
-      <Footer />
     </Container>
   );
 };

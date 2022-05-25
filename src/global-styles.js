@@ -1,4 +1,4 @@
-import styled,{ createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { colors } from "./colors";
 
 export const GlobalStyles = createGlobalStyle`
@@ -62,10 +62,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     p {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 400;
         text-align:center;
         color: ${colors.white};
+        font-family:"Metropolis", sans-serif;
     }
     
 `;

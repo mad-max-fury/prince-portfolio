@@ -7,12 +7,9 @@ export const FootWrap = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 10;
   @media (max-width: 500px) {
     flex-direction: column;
-    padding: 1.5rem;
   }
 `;
 export const FootIcons = styled.div`
