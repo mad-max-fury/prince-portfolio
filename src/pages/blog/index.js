@@ -73,14 +73,30 @@ const CurrentPostWrapper = styled.div`
   width: 50%;
   height: 75vh;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
   & > p:first-of-type {
+    padding-top: 15px;
     font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
-    padding: 15px 0;
+
     border: 1px solid red;
     text-align: start;
+  }
+  & > h5 {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  & > p:last-of-type {
+    font-size: 1.6rem;
+
+    font-weight: 400;
+    line-height: 25px;
+    text-align: start;
+    font-family: "metropolis";
   }
 `;
 const OldPost = styled.aside`
