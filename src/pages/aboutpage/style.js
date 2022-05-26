@@ -45,8 +45,8 @@ export const AboutImage = styled.img`
   border-radius: 15px;
   border: 1px solid red;
   @media screen and (max-width: 700px) {
-    width: 90%;
-    // height: 70%;
+    width: 100%;
+    height: 380px;
     margin: 0 auto;
   }
 `;
@@ -62,7 +62,9 @@ export const AboutMeDetails = styled.p`
   font-size: 16px;
   line-height: 2;
   @media screen and (max-width: 700px) {
-    padding: 30px 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
   }
 `;
 

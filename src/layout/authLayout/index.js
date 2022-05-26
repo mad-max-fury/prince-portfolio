@@ -30,11 +30,15 @@ const Container = styled.main`
   @media screen and (max-width: 700px) {
     object-fit: contain;
     background-size: cover;
+    height: fit-content;
+    padding: 0.5rem calc((100vw - 90%) / 2);
+    min-height: 100vh;
   }
 `;
 const InnerChildren = styled.div`
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
 `;
