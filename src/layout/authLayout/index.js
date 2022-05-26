@@ -26,13 +26,14 @@ const Container = styled.main`
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+
   flex-direction: column;
   @media screen and (max-width: 700px) {
     object-fit: contain;
     background-size: cover;
     height: fit-content;
     padding: 0.5rem calc((100vw - 90%) / 2);
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
   }
 `;
 const InnerChildren = styled.div`
