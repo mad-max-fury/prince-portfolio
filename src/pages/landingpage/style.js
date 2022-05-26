@@ -8,6 +8,7 @@ export const Container = styled.main`
   align-items: center;
   justify-content: center;
   margin: auto;
+  border: 1px solid red;
 `;
 export const Inner = styled.div`
   width: 100%;

@@ -61,7 +61,7 @@ const TextWrap = styled.div`
   padding: 0 1rem 2rem 1rem;
   width: calc(100% - 2rem);
   & > p:last-of-type {
-    font-family: Rubik;
+    /* font-family: Rubik; */
     font-size: 1.6rem;
     font-weight: 400;
     height: 40%;

@@ -14,12 +14,13 @@ const Navbar = () => {
           <span>My Project</span>
         </NavLink>
         <NavLink to="/blog" activeStyle>
-          <span>My Blog</span>
+          <span>Contact me</span>
         </NavLink>
       </NavMenu>
       <NavLink to="/" activeStyle className={"home"}>
         <span>Prince Chijioke</span>
       </NavLink>
+
       <Bars onClick={toggle} />
       <NavBarMobile toggle={toggle} isOpen={isOpen} />
     </Nav>

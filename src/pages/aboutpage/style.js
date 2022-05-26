@@ -24,6 +24,7 @@ export const AboutHeader = styled.div`
   }
   @media screen and (max-width: 700px) {
     padding: 28px 0 37px;
+    font-size: 1rem;
   }
 `;
 

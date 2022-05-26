@@ -29,6 +29,7 @@ const TextHeading = styled.h1`
       width: 6px;
       border-radius: 3px;
       margin: 0 0.3rem;
+      font-size: 1rem;
     }
   }
 `;

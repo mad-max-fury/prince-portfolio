@@ -50,6 +50,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: 30px;
+  border: 1px solid red;
   @media (max-width: 840px) {
     display: none;
   }
