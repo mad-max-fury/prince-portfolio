@@ -54,7 +54,9 @@ const BlogPage = () => {
           </CurrentPostWrapper>
           <OldPost>
             <RecentPostCard>
-              <ImageThumbnail></ImageThumbnail>
+              <ImageThumbnail>
+                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331" />
+              </ImageThumbnail>
               <TextWrap>
                 <p>11th March 2022</p>
                 <h5>
@@ -64,7 +66,9 @@ const BlogPage = () => {
               </TextWrap>
             </RecentPostCard>
             <RecentPostCard>
-              <ImageThumbnail></ImageThumbnail>
+              <ImageThumbnail>
+                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331" />
+              </ImageThumbnail>
               <TextWrap>
                 <p>11th March 2022</p>
                 <h5>
@@ -74,7 +78,9 @@ const BlogPage = () => {
               </TextWrap>
             </RecentPostCard>
             <RecentPostCard>
-              <ImageThumbnail></ImageThumbnail>
+              <ImageThumbnail>
+                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331" />
+              </ImageThumbnail>
               <TextWrap>
                 <p>11th March 2022</p>
                 <h5>
@@ -126,7 +132,32 @@ const RecentPostCard = styled.div`
   gap: 1rem;
 `;
 const ImageThumbnail = styled.div`
-  width: 35%;
+  width: 30%;
   border: 1px solid red;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
-const TextWrap = styled.div``;
+const TextWrap = styled.div`
+  border: 1px solid red;
+  width: 65%;
+  height: fit-content;
+  margin: auto;
+  & > p {
+      padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+
+    border: 1px solid red;
+    text-align: start;
+  }
+  }
+  & > h5 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+  }
+`;
