@@ -4,8 +4,9 @@ import { colors } from "../../colors";
 export const FeatureCardWrapper = styled.div`
   background-color: transparent;
   width: 310px;
-  height: 55vh;
+  /* height: 55vh; */
   perspective: 1000px;
+  height: 45.5rem;
 
   &:hover {
     & > div {
