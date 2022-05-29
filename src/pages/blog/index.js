@@ -146,7 +146,7 @@ const TextWrap = styled.div`
   height: fit-content;
   margin: auto;
   & > p {
-      padding: 15px 0;
+    padding: 15px 0;
     font-size: 1.4rem;
     font-weight: 300;
     color: #fff;
@@ -154,7 +154,7 @@ const TextWrap = styled.div`
     border: 1px solid red;
     text-align: start;
   }
-  }
+
   & > h5 {
     font-size: 20px;
     color: #fff;

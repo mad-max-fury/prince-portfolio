@@ -6,25 +6,21 @@ import {
   AboutDetails,
   AboutImage,
   AboutMeDetails,
-  FooterWrapper,
   ButtonContainer,
-  Inner,
 } from "./style";
-
-import { prince } from "../../assets";
-
-import { Footer, Text, Button } from "../../components/";
+import { Text, Button } from "../../components";
+import { compPrince } from "../../assets";
 
 const AboutMe = () => {
   return (
     <Container>
       <AboutWrapper>
         <AboutHeader>
-          <Text tex="About Me" size={4} />
+          <Text tex="About Me" size={7} />
         </AboutHeader>
 
         <AboutDetails>
-          <AboutImage src={""} alt="Prince Ugbuta"></AboutImage>
+          <AboutImage src={compPrince} alt="Prince Ugbuta"></AboutImage>
           <AboutMeDetails>
             My name is Prince Chijioke Ugbuta from the Eastern part of Nigeria
             and I'm passionate about building easy-to-use and profitable digital
@@ -39,6 +35,11 @@ const AboutMe = () => {
             that are aesthetically pleasing, technically refined and easy to
             use. I enjoy empathizing with people and crafting digital
             experiences, that empower users and boost business growth.
+            <br />
+            <br />
+            With a problem-solving mindset, I help my clients to create designs
+            that are aesthetically pleasing, technically refined and easy to
+            use.
             <ButtonContainer>
               <Button text={"View my Resume"} />
             </ButtonContainer>

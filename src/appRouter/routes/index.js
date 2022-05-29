@@ -1,4 +1,10 @@
-import { AboutMe, BlogPage, LandingPage, Projects } from "../../pages";
+import {
+  AboutMe,
+  BlogPage,
+  ContactMe,
+  LandingPage,
+  Projects,
+} from "../../pages";
 import { RequireAuth } from "./RequireAuth";
 
 const authRoutes = [
@@ -17,7 +23,11 @@ const authRoutes = [
     path: "/My-Project",
     element: <Projects />,
   },
-
+  {
+    name: "Contact",
+    path: "/contact-me",
+    element: <ContactMe />,
+  },
   { name: "home", path: "/", element: <LandingPage /> },
 ];
 

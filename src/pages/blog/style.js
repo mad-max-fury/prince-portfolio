@@ -117,6 +117,6 @@ export const CurrentPostWrapper = styled.div`
     font-weight: 400;
     line-height: 25px;
     text-align: start;
-    font-family: "metropolis";
+    font-family: "Kanit", sans-serif;
   }
 `;

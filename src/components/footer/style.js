@@ -14,7 +14,7 @@ export const FootWrap = styled.div`
 `;
 export const FootIcons = styled.div`
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   color: ${colors.white};
   & a {
     transition: all 0.3s ease-in-out;

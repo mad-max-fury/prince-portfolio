@@ -11,7 +11,7 @@ export { Button };
 const ButtonWrapper = styled.button`
   width: fit-content;
   height: fit-content;
-  padding: 15px 35px;
+  padding: 14px 32px;
   background-color: ${colors.general_btn_bg};
   color: ${colors.white};
   outline: 0;

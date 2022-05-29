@@ -11,17 +11,19 @@ const TextHeading = styled.h1`
   position: relative;
   width: fit-content;
   height: fit-content;
-  font-size: ${({ size }) => (size ? `${size}rem` : "7rem")};
+  font-size: ${(props) => (props.size ? props.size : "8.1rem")};
   margin: 0;
   padding: 0;
+  font-weight: 500;
+
   color: ${colors.white};
   &:after {
     content: "";
-    height: ${({ size }) => (size ? `${size * 0.4}rem` : "18px")};
+    height: 12px;
     position: absolute;
     bottom: 18%;
     margin: 0 0.5rem;
-    width: ${({ size }) => (size ? `${size * 0.4}rem` : "18px")};
+    width: 12px;
     border-radius: 50%;
     background-color: ${colors.general_btn_bg};
     @media (max-width: 768px) {

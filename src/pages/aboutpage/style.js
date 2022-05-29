@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../colors";
 export const Container = styled.main`
-  height: 100%;
+  height: 75vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -9,6 +9,7 @@ export const Container = styled.main`
 
 export const AboutWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -19,7 +20,7 @@ export const AboutWrapper = styled.div`
 export const AboutHeader = styled.div`
   margin: 0 auto;
   & > h1 {
-    font-weight: 400;
+    font-weight: 600;
     margin: 1rem 0;
   }
   @media screen and (max-width: 700px) {
@@ -31,8 +32,8 @@ export const AboutHeader = styled.div`
 export const AboutDetails = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  border: 1px solid red;
+  /* justify-content: space-between; */
+  gap: 4rem;
   height: fit-content;
   margin: auto;
   @media screen and (max-width: 700px) {
@@ -44,7 +45,8 @@ export const AboutImage = styled.img`
   width: 407px;
   height: 441px;
   border-radius: 15px;
-  border: 1px solid red;
+  object-fit: cover;
+
   @media screen and (max-width: 700px) {
     width: 100%;
     height: 380px;
@@ -53,14 +55,14 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutMeDetails = styled.p`
-  color: ${colors.white};
+  color: #f0f0f0;
   display: flex;
   flex-direction: column;
   text-align: start;
   font-weight: 400;
-  border: 1px solid red;
+
   width: 60%;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2;
   @media screen and (max-width: 700px) {
     width: 100%;
