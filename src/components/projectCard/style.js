@@ -6,7 +6,7 @@ export const FeatureCardWrapper = styled.div`
   width: 310px;
   /* height: 55vh; */
   perspective: 1000px;
-  height: 45.5rem;
+  height: 42.5rem;
 
   &:hover {
     & > div {
