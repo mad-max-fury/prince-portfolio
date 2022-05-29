@@ -23,7 +23,7 @@ const Projects = () => {
       <Inner>
         <WidgetWrap>
           <span>
-            <Text tex={"My Projects"} size={4} />
+            <Text tex={"My Projects"} size={3.5} />
             <Widget>
               {["Featured Projects", "All Projects"].map((item, index) => (
                 <Tab

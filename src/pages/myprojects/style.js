@@ -22,7 +22,7 @@ export const Paragraph = styled.p`
 `;
 
 export const WidgetWrap = styled.div`
-  border: 1px solid red;
+  border: 1px solid green;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,6 +35,7 @@ export const WidgetWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid red;
   }
 `;
 export const Widget = styled.div`
@@ -43,7 +44,8 @@ export const Widget = styled.div`
   gap: 3.2rem;
   align-items: center;
   justify-content: center;
-  padding: 15px 0;
+  /* padding: 15px 0; */
+  border: 1px solid red;
 `;
 export const Main = styled.main`
   height: 90%;

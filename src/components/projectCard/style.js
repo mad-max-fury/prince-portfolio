@@ -2,39 +2,43 @@ import styled from "styled-components";
 import { colors } from "../../colors";
 
 export const FeatureCardWrapper = styled.div`
-  width: calc(40rem - 0rem);
-  gap: 1.5rem;
+  background-color: transparent;
+  width: 350px;
+  height: 55vh;
+  perspective: 1000px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: ${colors.secondary_color};
-  color: #fff;
-  height: 46.2rem;
-  border-radius: 15px;
-`;
-export const FeatureCardIcon = styled.div`
-  width: 100%;
-  height: 60%;
-  border-radius: 15px 15px 0 0;
-  & img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
+  &:hover {
+    & > div {
+      transform: rotateY(180deg);
+    }
   }
 `;
-export const FeatureCardTitle = styled.h3`
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21.8px;
-`;
-export const FeatureCardDescription = styled.p`
-  text-align: start;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 19px;
-  color: #f5f5f7;
+
+export const Flipcardinner = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  & .flip-card-front,
+  & .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  & .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  & .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
 `;

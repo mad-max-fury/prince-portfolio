@@ -7,34 +7,25 @@ import {
   FeatureCardIcon,
   FeatureCardTitle,
   FeatureCardDescription,
+  Flipcardinner,
 } from "./style";
 const ProjectCard = ({ id, image, title, desc }) => {
   return (
     <FeatureCardWrapper>
-      <FeatureCardIcon>
-        <img
-          src={
-            "https://media.istockphoto.com/photos/cute-little-african-school-girl-in-classroom-picture-id510398013?b=1&k=20&m=510398013&s=170667a&w=0&h=3Jcpx1PEpJvHdr25EiZhYsGk7G8avUmgM94HApG5644="
-          }
-          alt="feature"
-        />
-      </FeatureCardIcon>
-      <TextWrap>
-        <FeatureCardTitle>{title}</FeatureCardTitle>
-        <FeatureCardDescription>
-          <Heading>Dexplore</Heading>
-        </FeatureCardDescription>
-        <p>
-          {" "}
-          {desc} An AI driven data analytics platform for cardano networks an AI
-          driven data analytics platform for cardano networks.
-        </p>
-        <BtnWrap>
-          <Tag>casestudy</Tag>
-          <Tag>projects</Tag>
-          <Tag>Ux</Tag>
-        </BtnWrap>
-      </TextWrap>
+      <Flipcardinner>
+        <div class="flip-card-front">
+          <img
+            src=""
+            alt="Avatar"
+            style={{ width: "300px", height: "300px" }}
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>somet</h1>
+          <p> Ehfbejfefe</p>
+          <p>whhjfbefef</p>
+        </div>
+      </Flipcardinner>
     </FeatureCardWrapper>
   );
 };

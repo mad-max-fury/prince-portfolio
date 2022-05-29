@@ -11,10 +11,11 @@ const TextHeading = styled.h1`
   position: relative;
   width: fit-content;
   height: fit-content;
-  font-size: ${(props) => (props.size ? props.size : "8.1rem")};
+  font-size: ${(props) => (props.size ? props.size : "5.9rem")};
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 700;
+  /* font-family: "kani"; */
 
   color: ${colors.white};
   &:after {
