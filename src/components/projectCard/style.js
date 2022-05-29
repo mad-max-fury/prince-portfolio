@@ -57,6 +57,9 @@ export const Flipcardinner = styled.div`
     & p {
       width: 90%;
       color: rgba(207, 207, 207, 1);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
     }
     & > span {
       display: flex;
