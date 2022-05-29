@@ -14,6 +14,7 @@ export const Inner = styled.div`
   flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
+  border: 1px;
 `;
 export const Paragraph = styled.p`
   font-size: 16px;
@@ -22,7 +23,6 @@ export const Paragraph = styled.p`
 `;
 
 export const WidgetWrap = styled.div`
-  border: 1px solid green;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,7 +35,6 @@ export const WidgetWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid red;
   }
 `;
 export const Widget = styled.div`
@@ -44,15 +43,12 @@ export const Widget = styled.div`
   gap: 3.2rem;
   align-items: center;
   justify-content: center;
-  /* padding: 15px 0; */
-  border: 1px solid red;
 `;
 export const Main = styled.main`
   height: 90%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 `;
 
 export const Tab = styled.h2`
@@ -74,7 +70,6 @@ export const PaginationWrap = styled.div`
   height: 6rem;
   width: 290px;
   margin: 0 auto;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;

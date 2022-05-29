@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { compPImage } from "../../assets";
 import { colors } from "../../colors";
+import { Button } from "../button";
 
 import {
   FeatureCardWrapper,
@@ -14,16 +16,23 @@ const ProjectCard = ({ id, image, title, desc }) => {
     <FeatureCardWrapper>
       <Flipcardinner>
         <div class="flip-card-front">
-          <img
-            src=""
-            alt="Avatar"
-            style={{ width: "300px", height: "300px" }}
-          />
+          <img src={compPImage} alt="Avatar" />
         </div>
         <div class="flip-card-back">
-          <h1>somet</h1>
-          <p> Ehfbejfefe</p>
-          <p>whhjfbefef</p>
+          <Heading>Dexplore</Heading>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            aliquam malesuada dui rhoncus nullam adipiscing velit ultrices at.
+            Viverra nulla integer ut volutpat ut. Non elit nunc purus
+            suspendisse maecenas purus, quis semper.{" "}
+          </p>
+          <span>
+            <Tag>casestudy</Tag>
+            <Tag>projects</Tag>
+            <Tag>UX</Tag>
+          </span>
+          <Button text={"View Case Study"} />
         </div>
       </Flipcardinner>
     </FeatureCardWrapper>
@@ -63,8 +72,7 @@ const Tag = styled.div`
   padding: 8px 11px;
   font-weight: 600;
   font-size: 12px;
-  font-family: Rubik;
-  color: ${colors.general_btn_bg};
-  background-color: rgba(62, 207, 142, 0.19);
+  color: rgba(143, 143, 143, 1);
+  background-color: rgba(11, 33, 45, 1);
   border-radius: 10px;
 `;

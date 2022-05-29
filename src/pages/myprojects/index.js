@@ -45,6 +45,7 @@ const Projects = () => {
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
+          <ProjectCard />
         </Main>
         {activeTab === 1 && (
           <PaginationWrap>

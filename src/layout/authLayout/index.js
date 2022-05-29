@@ -26,7 +26,6 @@ const Container = styled.main`
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
-
   flex-direction: column;
   @media screen and (max-width: 700px) {
     object-fit: contain;
