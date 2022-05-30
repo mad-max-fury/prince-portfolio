@@ -15,7 +15,7 @@ import styled from "styled-components";
 const BlogPage = () => {
   const [activeTab, setActiveTab] = useState(0);
   const handleTabChange = (index) => {
-    setActiveTab(index);
+    // setActiveTab(index);
   };
   return (
     <Container>
@@ -116,7 +116,6 @@ const OldPost = styled.aside`
   gap: 1.6rem;
   @media screen and (max-width: 768px) {
     width: 100%;
-    border: 1px solid green;
   }
 `;
 const ImageWrap = styled.div`
@@ -131,7 +130,7 @@ const ImageWrap = styled.div`
 const RecentPostCard = styled.div`
   height: 16.1rem;
   width: 100%;
-  border: 1px solid red;
+
   display: flex;
   gap: 1rem;
   @media screen and (max-width: 768px) {
@@ -145,7 +144,7 @@ const RecentPostCard = styled.div`
 `;
 const ImageThumbnail = styled.div`
   width: 30%;
-  border: 1px solid red;
+
   & > img {
     width: 100%;
     height: 100%;
@@ -158,7 +157,6 @@ const ImageThumbnail = styled.div`
   }
 `;
 const TextWrap = styled.div`
-  border: 1px solid red;
   width: 65%;
   height: fit-content;
   margin: auto;
@@ -168,7 +166,6 @@ const TextWrap = styled.div`
     font-weight: 300;
     color: #fff;
 
-    border: 1px solid red;
     text-align: start;
   }
 

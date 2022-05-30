@@ -25,7 +25,6 @@ export const Paragraph = styled.p`
 `;
 
 export const WidgetWrap = styled.div`
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,6 +37,9 @@ export const WidgetWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 `;
 export const Widget = styled.div`
@@ -53,7 +55,7 @@ export const Main = styled.main`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
+
   @media screen and (max-width: 700px) {
     flex-direction: column;
     height: fit-content;
@@ -80,7 +82,7 @@ export const PaginationWrap = styled.div`
   height: 6rem;
   width: 290px;
   margin: 0 auto;
-  border: 1px solid red;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,7 +103,7 @@ export const PaginationWrap = styled.div`
 export const CurrentPostWrapper = styled.div`
   width: 50%;
   height: 68vh;
-  border: 1px solid red;
+
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -112,7 +114,6 @@ export const CurrentPostWrapper = styled.div`
     font-weight: 600;
     color: #fff;
 
-    border: 1px solid red;
     text-align: start;
   }
   & > h5 {
