@@ -13,6 +13,10 @@ export const FeatureCardWrapper = styled.div`
       transform: rotateY(180deg);
     }
   }
+  @media screen and (max-width: 315px) {
+    width: 280px;
+    height: 40rem;
+  }
 `;
 
 export const Flipcardinner = styled.div`

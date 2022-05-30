@@ -5,6 +5,10 @@ export const Container = styled.main`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @media screen and (max-width: 700px) {
+    height: fit-content;
+    padding-bottom: 4rem;
+  }
 `;
 
 export const AboutWrapper = styled.div`

@@ -4,6 +4,10 @@ import { patternBg } from "../../assets";
 export const Container = styled.main`
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 700px) {
+    height: fit-content;
+    padding: 3rem 0;
+  }
 `;
 export const Inner = styled.div`
   width: 100%;
@@ -29,12 +33,18 @@ export const WidgetWrap = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+
   & > span {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      & > h1 {
+        margin: 0 auto;
+      }
+    }
   }
 `;
 export const Widget = styled.div`
@@ -43,12 +53,30 @@ export const Widget = styled.div`
   gap: 3.2rem;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    margin: 1rem auto;
+  }
 `;
 export const Main = styled.main`
   height: 90%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 800px) {
+    height: fit-content;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
+    gap: 1rem;
+    row-gap: 2rem;
+    //center items
+    place-items: center;
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    place-items: center;
+  }
 `;
 
 export const Tab = styled.h2`

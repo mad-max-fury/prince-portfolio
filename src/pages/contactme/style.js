@@ -10,6 +10,10 @@ export const Container = styled.main`
   margin: auto;
   gap: 1rem;
   height: 70vh;
+  @media screen and (max-width: 700px) {
+    height: 90vh;
+    padding-top: 1rem;
+  }
 `;
 export const Inner = styled.div`
   width: 100%;

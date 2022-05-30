@@ -4,6 +4,9 @@ import { patternBg } from "../../assets";
 export const Container = styled.main`
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 700px) {
+    height: fit-content;
+  }
 `;
 export const Inner = styled.div`
   width: 100%;
