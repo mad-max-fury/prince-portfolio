@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { compPImage, giftbg, ripplebg, shoppbg } from "../../assets";
 import { Footer, ProjectCard, Text } from "../../components";
 import {
   Container,
@@ -16,7 +17,7 @@ const Projects = () => {
   const [projects, setProjects] = useState(Array(5).fill(0));
 
   const handleTabChange = (index) => {
-    setActiveTab(index);
+    setActiveTab(0);
   };
   return (
     <Container>
@@ -42,10 +43,30 @@ const Projects = () => {
           )}
         </WidgetWrap>
         <Main>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <ProjectCard
+            image={compPImage}
+            title={"Dexplore"}
+            classn={"disabled"}
+            btnText={"Casestudy coming soon"}
+          />
+          <ProjectCard
+            image={giftbg}
+            title="Gift"
+            classn={"disabled"}
+            btnText={"Casestudy coming soon"}
+          />
+          <ProjectCard
+            image={ripplebg}
+            title="Ripple"
+            classn={"disabled"}
+            btnText={"Casestudy coming soon"}
+          />
+          <ProjectCard
+            image={shoppbg}
+            title="shop"
+            classn={"disabled"}
+            btnText={"Casestudy coming soon"}
+          />
         </Main>
         {activeTab === 1 && (
           <PaginationWrap>

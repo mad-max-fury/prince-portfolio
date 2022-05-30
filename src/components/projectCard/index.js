@@ -11,15 +11,15 @@ import {
   FeatureCardDescription,
   Flipcardinner,
 } from "./style";
-const ProjectCard = ({ id, image, title, desc }) => {
+const ProjectCard = ({ id, image, title, desc, classn, btnText }) => {
   return (
     <FeatureCardWrapper>
       <Flipcardinner>
         <div class="flip-card-front">
-          <img src={compPImage} alt="Avatar" />
+          <img src={image} alt="Avatar" />
         </div>
         <div class="flip-card-back">
-          <Heading>Dexplore</Heading>
+          <Heading>{title}</Heading>
           <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -32,7 +32,10 @@ const ProjectCard = ({ id, image, title, desc }) => {
             <Tag>projects</Tag>
             <Tag>UX</Tag>
           </span>
-          <Button text={"View Case Study"} />
+          <Button
+            classn={classn}
+            text={btnText ? btnText : "View Case Study"}
+          />
         </div>
       </Flipcardinner>
     </FeatureCardWrapper>

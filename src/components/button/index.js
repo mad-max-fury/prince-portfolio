@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../colors";
 
-const Button = ({ text }) => {
-  return <ButtonWrapper> {text}</ButtonWrapper>;
+const Button = ({ text, classn }) => {
+  return <ButtonWrapper className={classn}> {text}</ButtonWrapper>;
 };
 
 export { Button };
@@ -33,5 +33,11 @@ const ButtonWrapper = styled.button`
     background-color: unset;
     color: ${colors.general_btn_bg};
     border: 2px solid ${colors.general_btn_bg};
+  }
+  &.disabled {
+    background-color: rgba(72, 94, 106, 1);
+    color: rgba(27, 49, 61, 1);
+    border: 2px solid rgba(72, 94, 106, 1);
+    cursor: not-allowed;
   }
 `;

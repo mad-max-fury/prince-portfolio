@@ -9,26 +9,49 @@ import {
   NavLink,
   NavBtnLinkWrap,
   NavBtnLink,
+  NavLogoContainer,
+  LogoContainer,
 } from "./style";
 const NavBarMobile = ({ toggle, isOpen }) => {
   return (
     <>
       <NavBarMobileContainer isOpen={isOpen}>
-        <Icon>
-          <CloseIcon onClick={toggle} />
-        </Icon>
+        <NavLogoContainer>
+          <LogoContainer>
+            {" "}
+            <NavLink to="/" activeStyle className={"home"} onClick={toggle}>
+              <h2>Prince Chijioke</h2>
+            </NavLink>
+          </LogoContainer>
+          <Icon>
+            <CloseIcon onClick={toggle} />
+          </Icon>
+        </NavLogoContainer>
+
         <NavBarLinksWrapper>
           <NavLinks>
-            <NavLink to="/about" activeStyle>
+            <NavLink to="/about" onClick={toggle} activeStyle>
               <span>About</span>
             </NavLink>
-            <NavLink to="/My-Project" activeStyle>
-              <span>Projects</span>
+            <NavLink to="/My-Project" activeStyle onClick={toggle}>
+              <span>My Project</span>
             </NavLink>
-            <NavLink to="/blog" activeStyle>
-              <span>Blog</span>
+            <NavLink to="/contact-me" activeStyle onClick={toggle}>
+              <span>Contact me</span>
             </NavLink>
           </NavLinks>
+          <NavBtnLinkWrap>
+            <NavBtnLink
+              to="/blog"
+              activeStyle
+              onClick={(e) => {
+                e.preventDefault();
+                toggle();
+              }}
+            >
+              <Button filled={false} text={"Visit my blog"} />
+            </NavBtnLink>
+          </NavBtnLinkWrap>
         </NavBarLinksWrapper>
       </NavBarMobileContainer>
     </>

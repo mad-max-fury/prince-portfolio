@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { RiMenu3Line } from "react-icons/ri";
 import { colors } from "../../colors";
 
 export const Nav = styled.nav`
@@ -34,7 +34,7 @@ export const NavLink = styled(Link)`
     font-weight: 600;
   }
 `;
-export const Bars = styled(FaBars)`
+export const Bars = styled(RiMenu3Line)`
   display: none;
   color: ${colors.white};
   @media (max-width: 840px) {
