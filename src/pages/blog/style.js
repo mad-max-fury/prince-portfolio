@@ -54,6 +54,11 @@ export const Main = styled.main`
   display: flex;
   justify-content: space-between;
   border: 1px solid red;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 4rem;
+  }
 `;
 
 export const Tab = styled.h2`
@@ -121,5 +126,10 @@ export const CurrentPostWrapper = styled.div`
     line-height: 25px;
     text-align: start;
     font-family: "Kanit", sans-serif;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1.6rem;
   }
 `;

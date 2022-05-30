@@ -114,6 +114,10 @@ const OldPost = styled.aside`
   height: 100%;
   width: 48%;
   gap: 1.6rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    border: 1px solid green;
+  }
 `;
 const ImageWrap = styled.div`
   height: 60%;
@@ -130,6 +134,14 @@ const RecentPostCard = styled.div`
   border: 1px solid red;
   display: flex;
   gap: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 558px) {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+  }
 `;
 const ImageThumbnail = styled.div`
   width: 30%;
@@ -138,6 +150,11 @@ const ImageThumbnail = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 558px) {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
   }
 `;
 const TextWrap = styled.div`
@@ -159,5 +176,10 @@ const TextWrap = styled.div`
     font-size: 20px;
     color: #fff;
     font-weight: 300;
+  }
+  @media screen and (max-width: 558px) {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
   }
 `;
