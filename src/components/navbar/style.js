@@ -10,6 +10,9 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 10;
   background-color: ${colors.secondary_color};
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 `;
 export const NavLink = styled(Link)`
   color: ${colors.white};

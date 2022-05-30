@@ -8,12 +8,15 @@ export const NavBarMobileContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: fit-content;
+  padding: 2rem 0;
+  padding-top: unset;
   font-family: orbitron, sans-serif;
 
   background-color: ${colors.main_color};
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
@@ -24,29 +27,33 @@ export const NavBarMobileContainer = styled.div`
   }
 `;
 
-export const NavLogoContainer = styled.div``;
+export const NavLogoContainer = styled.div`
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+`;
 
 export const LogoContainer = styled.div`
   width: fit-content;
   height: 70px;
-  position: relative;
-  margin-top: -18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: fit-content;
 `;
 
 export const CloseIcon = styled(VscClose)`
   color: #fff;
   font-size: 4rem;
-  position: absolute;
-  top: 100%;
-  right: 25%;
-  margin-top: 18px;
   font-weight: 600;
 `;
 
 export const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
@@ -62,6 +69,7 @@ export const NavBarLinksWrapper = styled.div`
 `;
 export const NavLinks = styled.ul`
   display: grid;
+
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 70px);
   text-align: start;

@@ -40,9 +40,13 @@ export const WidgetWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
     @media screen and (max-width: 500px) {
       & > h1 {
+        font-weight: 600;
         margin: 0 auto;
+
+        font-size: 3rem;
       }
     }
   }
@@ -55,7 +59,7 @@ export const Widget = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 500px) {
-    margin: 1rem auto;
+    margin: 2rem auto;
   }
 `;
 export const Main = styled.main`

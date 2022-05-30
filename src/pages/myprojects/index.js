@@ -63,7 +63,7 @@ const Projects = () => {
           />
           <ProjectCard
             image={shoppbg}
-            title="shop"
+            title="Shoppkings"
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />

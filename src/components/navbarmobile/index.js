@@ -41,15 +41,8 @@ const NavBarMobile = ({ toggle, isOpen }) => {
             </NavLink>
           </NavLinks>
           <NavBtnLinkWrap>
-            <NavBtnLink
-              to="/blog"
-              activeStyle
-              onClick={(e) => {
-                e.preventDefault();
-                toggle();
-              }}
-            >
-              <Button filled={false} text={"Visit my blog"} />
+            <NavBtnLink to="/blog" activeStyle onClick={toggle}>
+              <Button filled={true} text={"Visit my blog"} />
             </NavBtnLink>
           </NavBtnLinkWrap>
         </NavBarLinksWrapper>

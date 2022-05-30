@@ -1,16 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { compPImage } from "../../assets";
-import { colors } from "../../colors";
 import { Button } from "../button";
 
-import {
-  FeatureCardWrapper,
-  FeatureCardIcon,
-  FeatureCardTitle,
-  FeatureCardDescription,
-  Flipcardinner,
-} from "./style";
+import { FeatureCardWrapper, Flipcardinner } from "./style";
 const ProjectCard = ({ id, image, title, desc, classn, btnText }) => {
   return (
     <FeatureCardWrapper>
@@ -49,28 +41,7 @@ const Heading = styled.h3`
   font-weight: 500;
   font-size: 24px;
 `;
-const BtnWrap = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
-const TextWrap = styled.div`
-  height: calc(100% - 60% - 2rem);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: Rubik;
-  justify-content: space-between;
-  align-items: start;
-  padding: 0 1rem 2rem 1rem;
-  width: calc(100% - 2rem);
-  & > p:last-of-type {
-    /* font-family: Rubik; */
-    font-size: 1.6rem;
-    font-weight: 400;
-    height: 40%;
-    text-align: start;
-  }
-`;
+
 const Tag = styled.div`
   padding: 8px 11px;
   font-weight: 600;

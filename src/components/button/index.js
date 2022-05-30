@@ -2,8 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../colors";
 
-const Button = ({ text, classn }) => {
-  return <ButtonWrapper className={classn}> {text}</ButtonWrapper>;
+const Button = ({ text, classn, filled }) => {
+  return (
+    <ButtonWrapper filled={filled} className={classn}>
+      {" "}
+      {text}
+    </ButtonWrapper>
+  );
 };
 
 export { Button };
@@ -12,7 +17,8 @@ const ButtonWrapper = styled.button`
   width: fit-content;
   height: fit-content;
   padding: 14px 32px;
-  background-color: ${colors.general_btn_bg};
+  background-color: ${(props) =>
+    props.filled ? "transparent" : colors.general_btn_bg};
   color: ${colors.white};
   outline: 0;
   border: 0;
@@ -21,7 +27,10 @@ const ButtonWrapper = styled.button`
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border: 2px solid transparent;
+  border: ${(props) =>
+    props.filled
+      ? `2px solid ${colors.general_btn_bg}`
+      : "2px solid transparent"};
   &:hover {
     transition: all 0.3s ease-in-out;
     background-color: unset;
