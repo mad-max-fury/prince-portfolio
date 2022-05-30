@@ -8,7 +8,7 @@ export const NavBarMobileContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: fit-content;
+  height: ${({ isOpen }) => (isOpen ? "fit-content" : "0")};
   padding: 2rem 0;
   padding-top: unset;
   font-family: orbitron, sans-serif;
@@ -32,7 +32,8 @@ export const NavLogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: ${({ isOpen }) => (isOpen ? "100px" : "0")};
+  transition: all 0.3s ease-in-out;
 `;
 
 export const LogoContainer = styled.div`
@@ -42,6 +43,7 @@ export const LogoContainer = styled.div`
   justify-content: center;
   display: flex;
   width: fit-content;
+  overflow: ${({ isOpen }) => (isOpen ? "unset" : "hidden")};
 `;
 
 export const CloseIcon = styled(VscClose)`
@@ -69,10 +71,10 @@ export const NavBarLinksWrapper = styled.div`
 `;
 export const NavLinks = styled.ul`
   display: grid;
-
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 70px);
   text-align: start;
+  width: 100%;
   @media (max-width: 840px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 65px);

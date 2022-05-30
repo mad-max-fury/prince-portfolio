@@ -16,7 +16,7 @@ const NavBarMobile = ({ toggle, isOpen }) => {
   return (
     <>
       <NavBarMobileContainer isOpen={isOpen}>
-        <NavLogoContainer>
+        <NavLogoContainer isOpen={isOpen}>
           <LogoContainer>
             {" "}
             <NavLink to="/" activeStyle className={"home"} onClick={toggle}>

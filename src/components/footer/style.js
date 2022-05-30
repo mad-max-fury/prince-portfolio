@@ -10,6 +10,7 @@ export const FootWrap = styled.div`
   z-index: 10;
   @media (max-width: 500px) {
     flex-direction: column;
+    padding-bottom: 1.6rem;
   }
 `;
 export const FootIcons = styled.div`
