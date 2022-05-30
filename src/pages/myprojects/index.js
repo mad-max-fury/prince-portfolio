@@ -44,24 +44,36 @@ const Projects = () => {
         </WidgetWrap>
         <Main>
           <ProjectCard
+            Paragraph={
+              "Dexplore is an AI-driven data aggregation platform for tokens deployed on the Cardano & Milkomeda networks providing holistic analysis and tracking capabilities for each given asset."
+            }
             image={compPImage}
             title={"Dexplore"}
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />
           <ProjectCard
+            Paragraph={
+              "A platform that allows users to gift each other Non-fungible tokens (NFT) as a means of settlement. "
+            }
             image={giftbg}
             title="Gift"
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />
           <ProjectCard
+            Paragraph={
+              "An all-in-one store that handles your delivery, collects payments, manages orders, with business analytics."
+            }
             image={ripplebg}
             title="Ripple"
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />
           <ProjectCard
+            Paragraph={
+              "A platform that allows business owners to list and sell their products likewise freelancers to sell their services."
+            }
             image={shoppbg}
             title="Shoppkings"
             classn={"disabled"}

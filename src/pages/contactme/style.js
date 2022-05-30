@@ -11,7 +11,7 @@ export const Container = styled.main`
   gap: 1rem;
   height: 70vh;
   @media screen and (max-width: 700px) {
-    height: 90vh;
+    height: 78vh;
     padding-top: 1rem;
   }
 `;
@@ -84,6 +84,9 @@ export const TextCon = styled.div`
     margin: 0;
     color: ${colors.white};
     font-family: "Kanit", sans-serif;
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
   & > p {
     padding-bottom: 2rem;

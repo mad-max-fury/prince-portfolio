@@ -3,7 +3,15 @@ import styled from "styled-components";
 import { Button } from "../button";
 
 import { FeatureCardWrapper, Flipcardinner } from "./style";
-const ProjectCard = ({ id, image, title, desc, classn, btnText }) => {
+const ProjectCard = ({
+  id,
+  image,
+  title,
+  desc,
+  classn,
+  btnText,
+  Paragraph,
+}) => {
   return (
     <FeatureCardWrapper>
       <Flipcardinner>
@@ -12,13 +20,7 @@ const ProjectCard = ({ id, image, title, desc, classn, btnText }) => {
         </div>
         <div class="flip-card-back">
           <Heading>{title}</Heading>
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            aliquam malesuada dui rhoncus nullam adipiscing velit ultrices at.
-            Viverra nulla integer ut volutpat ut. Non elit nunc purus
-            suspendisse maecenas purus, quis semper.{" "}
-          </p>
+          <p>{Paragraph}</p>
           <span>
             <Tag>casestudy</Tag>
             <Tag>projects</Tag>
