@@ -64,7 +64,7 @@ export const AboutMeDetails = styled.p`
   display: flex;
   flex-direction: column;
   text-align: start;
-  font-weight: 500;
+  font-weight: 300;
   font-family: Rubik;
   width: 60%;
   font-size: 1.6rem;

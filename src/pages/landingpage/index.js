@@ -19,7 +19,12 @@ const LandingPage = () => {
             user’s problems and meeting client’s goal.
           </Paragraph>
         </div>
-        <Button text={"View my Resume"} />
+        <a
+          href="https://drive.google.com/file/d/188ryywtmKnOkHc17rTQ3QuIDn2ytXhgD/view"
+          target={"_blank"}
+        >
+          <Button text={"View my Resume"} />
+        </a>
       </Inner>
     </Container>
   );

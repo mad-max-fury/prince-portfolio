@@ -12,7 +12,7 @@ export const Container = styled(motion.main)`
   gap: 1rem;
   height: 70vh;
   @media screen and (max-width: 700px) {
-    height: 78vh;
+    height: fit-content;
     padding-top: 1rem;
   }
 `;
@@ -86,11 +86,19 @@ export const TextCon = styled.div`
     margin: 0;
     color: ${colors.white};
     font-family: "Kanit", sans-serif;
+
     @media (max-width: 500px) {
       font-size: 2rem;
+    }
+    @media (max-width: 380px) {
+      font-size: 1.8rem;
     }
   }
   & > p {
     padding-bottom: 2rem;
+    @media (max-width: 380px) {
+      font-size: 1.6rem;
+      line-height: unset;
+    }
   }
 `;

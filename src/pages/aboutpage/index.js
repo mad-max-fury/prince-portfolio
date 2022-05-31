@@ -42,14 +42,19 @@ const AboutMe = () => {
             globe designing digital solutions in the fintech industry,
             blockchain industry, ecommerce industry, and lots more with a high
             understanding of usability. I have also explored blockchain
-            technology and designed several experiences for web 3 projects.
+            technology and designed several experiences for web3 projects.
             <br />
             <br />
             When I am not designing on Figma, I design graphics in photoshop,
             develop WordPress websites, and share my ideas on my blog and design
             communities to aid beginners to learn.
             <ButtonContainer>
-              <Button text={"View my Resume"} />
+              <a
+                href="https://drive.google.com/file/d/188ryywtmKnOkHc17rTQ3QuIDn2ytXhgD/view"
+                target={"_blank"}
+              >
+                <Button text={"View my Resume"} />
+              </a>
             </ButtonContainer>
           </AboutMeDetails>
         </AboutDetails>
