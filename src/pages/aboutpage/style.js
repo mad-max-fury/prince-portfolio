@@ -47,7 +47,7 @@ export const AboutDetails = styled.div`
 
 export const AboutImage = styled.img`
   width: 407px;
-  height: 441px;
+  height: 511px;
   border-radius: 15px;
   object-fit: cover;
 
@@ -63,11 +63,12 @@ export const AboutMeDetails = styled.p`
   display: flex;
   flex-direction: column;
   text-align: start;
-  font-weight: 400;
-
+  font-weight: 500;
+  font-family: "Montserrat";
   width: 60%;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 1.8rem;
+  font-style: normal;
+  line-height: 32px;
   @media screen and (max-width: 700px) {
     width: 100%;
     margin: auto;

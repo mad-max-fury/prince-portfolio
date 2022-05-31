@@ -57,7 +57,7 @@ const Projects = () => {
               "A platform that allows users to gift each other Non-fungible tokens (NFT) as a means of settlement. "
             }
             image={giftbg}
-            title="Gift"
+            title="GiftNft"
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />
