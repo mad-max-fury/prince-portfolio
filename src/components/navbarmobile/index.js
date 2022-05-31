@@ -20,7 +20,7 @@ const NavBarMobile = ({ toggle, isOpen }) => {
           <LogoContainer>
             {" "}
             <NavLink to="/" activeStyle className={"home"} onClick={toggle}>
-              <h2>Prince Chijioke</h2>
+              <h4>Prince Chijioke</h4>
             </NavLink>
           </LogoContainer>
           <Icon>

@@ -27,7 +27,10 @@ const Footer = () => {
       </FootIcons>
       {pathname !== "/" ? (
         <FootText>
-          Designed by me, Developed by <span>Devcruz</span>
+          Designed by me, Developed by{" "}
+          <a href="https://github.com/mad-max-fury" target={"_blank"}>
+            Endee__codes
+          </a>
         </FootText>
       ) : null}
     </FootWrap>

@@ -10,10 +10,17 @@ import {
 } from "./style";
 import { Text, Button } from "../../components";
 import { compPrince } from "../../assets";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <AboutWrapper>
         <AboutHeader>
           <Text tex="About Me" size={7} />
@@ -22,24 +29,25 @@ const AboutMe = () => {
         <AboutDetails>
           <AboutImage src={compPrince} alt="Prince Ugbuta"></AboutImage>
           <AboutMeDetails>
-            My name is Prince Chijioke Ugbuta from the Eastern part of Nigeria
-            and I'm passionate about building easy-to-use and profitable digital
-            products while solving user’s needs. <br />
+            My name is Prince Chijioke Ugbuta a User Experience Designer
+            passionate about building easy-to-use, user-friendly, and profitable
+            digital products while solving users’ needs. <br />
             <br />
-            I’m a Google Certified UI/UX designer with an experience in working
-            effectively with teams across the globe designing usable and swift
-            user experience. I have also explored the blockchain technology and
-            desiged several experiences for web 3 projects. <br />
+            My love for learning and quest for knowledge fueled my engagement
+            with the prestigious Genesys Tech Hub where I successfully completed
+            an intensive six months internship program. At Genesys, I learned
+            more about collaboration in an agile development team. <br />
             <br />
-            With a problem-solving mindset, I help my clients to create designs
-            that are aesthetically pleasing, technically refined and easy to
-            use. I enjoy empathizing with people and crafting digital
-            experiences, that empower users and boost business growth.
+            Over the years I have collaborated with different teams across the
+            globe designing digital solutions in the fintech industry,
+            blockchain industry, ecommerce industry, and lots more with a high
+            understanding of usability. I have also explored blockchain
+            technology and designed several experiences for web 3 projects.
             <br />
             <br />
-            With a problem-solving mindset, I help my clients to create designs
-            that are aesthetically pleasing, technically refined and easy to
-            use.
+            When I am not designing on Figma, I design graphics in photoshop,
+            develop WordPress websites, and share my ideas on my blog and design
+            communities to aid beginners to learn.
             <ButtonContainer>
               <Button text={"View my Resume"} />
             </ButtonContainer>

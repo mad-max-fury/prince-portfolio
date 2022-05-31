@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../../colors";
 import { patternBg } from "../../assets";
-export const Container = styled.main`
+import { motion } from "framer-motion";
+export const Container = styled(motion.main)`
   height: 100%;
   width: 100%;
   @media screen and (max-width: 700px) {
@@ -20,7 +21,7 @@ export const Inner = styled.div`
   margin: 0 auto;
   border: 1px;
 `;
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
   font-size: 16px;
   font-weight: 400;
   margin: 10px 0;
@@ -40,13 +41,14 @@ export const WidgetWrap = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    & > span {
+      @media screen and (max-width: 500px) {
+        & > h1 {
+          font-weight: 600;
+          margin: 0 auto;
 
-    @media screen and (max-width: 500px) {
-      & > h1 {
-        font-weight: 600;
-        margin: 0 auto;
-
-        font-size: 3rem;
+          font-size: 3rem;
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Container = styled.main`
+export const Container = styled(motion.main)`
   width: 100%;
   height: fit-content;
   display: flex;
@@ -23,6 +24,10 @@ export const Inner = styled.div`
     flex-direction: column;
     gap: 0rem;
     align-items: center;
+
+    & h1 {
+      font-weight: 550;
+    }
   }
 `;
 export const Paragraph = styled.p`

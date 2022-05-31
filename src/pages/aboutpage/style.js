@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../colors";
-export const Container = styled.main`
+export const Container = styled(motion.main)`
   height: 75vh;
   display: flex;
   justify-content: space-between;
@@ -47,7 +48,7 @@ export const AboutDetails = styled.div`
 
 export const AboutImage = styled.img`
   width: 407px;
-  height: 511px;
+  height: 450px;
   border-radius: 15px;
   object-fit: cover;
 
@@ -66,9 +67,19 @@ export const AboutMeDetails = styled.p`
   font-weight: 500;
   font-family: Rubik;
   width: 60%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-style: normal;
-  line-height: 32px;
+  line-height: 25px;
+
+  & a {
+    color: ${colors.white};
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
   @media screen and (max-width: 700px) {
     width: 100%;
     margin: auto;

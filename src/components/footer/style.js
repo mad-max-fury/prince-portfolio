@@ -30,7 +30,8 @@ export const FootText = styled.div`
   color: ${colors.white};
 
   font-size: 1.5rem;
-  & span {
+  & a {
+    text-decoration: none;
     font-size: 1.5rem;
     color: ${colors.nav_link};
   }

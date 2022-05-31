@@ -9,10 +9,17 @@ import {
 } from "./style";
 import { Button, Text } from "../../components";
 import { thumbup } from "../../assets";
+import { motion } from "framer-motion";
 
 const ContactMe = () => {
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <TextWrap>
         <Text tex={"Contact me"} size={5} />
       </TextWrap>

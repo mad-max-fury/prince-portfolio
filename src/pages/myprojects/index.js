@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { compPImage, giftbg, ripplebg, shoppbg } from "../../assets";
 import { Footer, ProjectCard, Text } from "../../components";
@@ -20,11 +21,24 @@ const Projects = () => {
     setActiveTab(0);
   };
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Inner>
         <WidgetWrap>
           <span>
-            <Text tex={"My Projects"} size={3.5} />
+            <motion.span
+              initial={{ opacity: 0, x: 250 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <Text tex={"My Projects"} size={3.5} />
+            </motion.span>
             <Widget>
               {["Featured Projects", "All Projects"].map((item, index) => (
                 <Tab
@@ -37,7 +51,13 @@ const Projects = () => {
             </Widget>
           </span>
           {activeTab !== 1 && (
-            <Paragraph>
+            <Paragraph
+              as={motion.p}
+              initial={{ opacity: 0, x: 250 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              exit={{ opacity: 0 }}
+            >
               Few selected featured case studies I have worked on recently.
             </Paragraph>
           )}

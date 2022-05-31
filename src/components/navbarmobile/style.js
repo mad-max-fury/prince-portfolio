@@ -104,6 +104,15 @@ export const NavLink = styled(Link)`
   &.home {
     font-size: 3rem;
     font-weight: 600;
+    & > h4 {
+      font-size: inherit;
+      font-weight: inherit;
+      @media screen and (max-width: 540px) {
+        font-size: 2.1rem;
+        font-weight: 600;
+        font-style: normal;
+      }
+    }
   }
 `;
 export const NavHashLink = styled(HashLink)`

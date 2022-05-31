@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../colors";
 
-export const Container = styled.main`
+export const Container = styled(motion.main)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -54,6 +54,7 @@ export const TextWrap = styled.div`
   margin: 0 auto;
   & > h1 {
     font-weight: 600;
+    margin-top: -1rem;
   }
 `;
 export const ImageWrap = styled.div`
