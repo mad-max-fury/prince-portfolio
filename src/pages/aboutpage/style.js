@@ -60,7 +60,7 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutMeDetails = styled.p`
-  color: #f0f0f0;
+  color: gainsboro;
   display: flex;
   flex-direction: column;
   text-align: start;

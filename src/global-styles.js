@@ -65,14 +65,16 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 1.6rem;
         font-weight: 400;
         text-align:center;
-        color: ${colors.white};
-      font-family: Rubik;
+        font-family: Rubik;
+        color:gainsboro;
+
     }
         span {
         font-size: 1.6rem;
         font-weight: 400;
         text-align:center;
        font-family: Rubik;
+       color: gainsboro;
     }
     
 `;
