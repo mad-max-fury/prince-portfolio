@@ -15,7 +15,7 @@ const TextHeading = styled.h1`
   margin: 0;
   padding: 0;
   font-weight: 700;
-  /* font-family: "kani"; */
+  font-family: Rubik;
 
   color: ${colors.white};
   &:after {
@@ -28,9 +28,9 @@ const TextHeading = styled.h1`
     border-radius: 50%;
     background-color: ${colors.general_btn_bg};
     @media (max-width: 768px) {
-      height: 6px;
-      width: 6px;
-      border-radius: 3px;
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
       margin: 0 0.3rem;
       font-size: 1rem;
     }

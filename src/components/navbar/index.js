@@ -22,7 +22,7 @@ const Navbar = () => {
         <NavLink to="/" activeStyle className={"home"}>
           <h2>Prince Chijioke</h2>
         </NavLink>
-        <NavBtnLink to="/blog" activeStyle>
+        <NavBtnLink href="http://princechijioke.medium.com" activeStyle>
           <h1>Visit my blog</h1>
         </NavBtnLink>
       </NavBtnWraps>

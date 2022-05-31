@@ -132,7 +132,7 @@ export const NavBtnLinkWrap = styled.div`
   justify-content: center;
   padding-left: 2rem;
 `;
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
   border-radius: 5px;
   width: fit-content;
   height: fit-content;

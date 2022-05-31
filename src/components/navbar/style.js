@@ -68,7 +68,7 @@ export const NavBtn = styled.nav`
     display: none;
   }
 `;
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
   color: ${colors.white};
   display: flex;
   align-items: center;

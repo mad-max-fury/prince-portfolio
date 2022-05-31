@@ -66,7 +66,7 @@ const Projects = () => {
               "An all-in-one store that handles your delivery, collects payments, manages orders, with business analytics."
             }
             image={ripplebg}
-            title="Ripple"
+            title="Ripples"
             classn={"disabled"}
             btnText={"Casestudy coming soon"}
           />

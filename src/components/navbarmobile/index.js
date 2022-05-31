@@ -41,7 +41,11 @@ const NavBarMobile = ({ toggle, isOpen }) => {
             </NavLink>
           </NavLinks>
           <NavBtnLinkWrap>
-            <NavBtnLink to="/blog" activeStyle onClick={toggle}>
+            <NavBtnLink
+              href="http://princechijioke.medium.com"
+              activeStyle
+              onClick={toggle}
+            >
               <Button filled={true} text={"Visit my blog"} />
             </NavBtnLink>
           </NavBtnLinkWrap>

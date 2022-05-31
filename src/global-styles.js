@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     
         // box-sizing:border-box;
         font-size: 62.5%;
-      font-family: 'Kanit', sans-serif;
+   font-family: Rubik;
         margin:0;
         padding:0;
     }
@@ -66,13 +66,13 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 400;
         text-align:center;
         color: ${colors.white};
-      font-family: 'Montserrat', sans-serif;
+      font-family: Rubik;
     }
         span {
         font-size: 1.6rem;
         font-weight: 400;
         text-align:center;
-      font-family: 'Kanit', sans-serif;
+       font-family: Rubik;
     }
     
 `;
