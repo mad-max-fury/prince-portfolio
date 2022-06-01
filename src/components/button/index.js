@@ -23,9 +23,9 @@ const ButtonWrapper = styled.button`
   outline: 0;
   border: 0;
   border-radius: 10px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: ${(props) =>

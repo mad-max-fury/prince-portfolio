@@ -29,10 +29,10 @@ export const FootIcons = styled.div`
 export const FootText = styled.div`
   color: ${colors.white};
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   & a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: ${colors.nav_link};
   }
 `;

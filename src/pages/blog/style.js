@@ -126,7 +126,7 @@ export const CurrentPostWrapper = styled.div`
     font-weight: 400;
     line-height: 25px;
     text-align: start;
-    font-family: "Kanit", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
   @media screen and (max-width: 700px) {
     width: 100%;

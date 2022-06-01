@@ -33,14 +33,14 @@ export const Inner = styled.div`
     text-align: center;
     margin: 0;
     color: ${colors.white};
-    font-family: "Kanit", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
 `;
 export const Paragraph = styled.p`
   font-size: 15px;
   font-weight: 300;
   line-height: 32px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #f0f0f0;
 `;
 export const TextWrap = styled.div`
@@ -54,8 +54,9 @@ export const TextWrap = styled.div`
   max-width: 680px;
   margin: 0 auto;
   & > h1 {
-    font-weight: 600;
-    margin-top: -1rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 0rem;
   }
 `;
 export const ImageWrap = styled.div`
@@ -80,24 +81,24 @@ export const TextCon = styled.div`
   max-width: 680px;
   margin: auto;
   & > h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin: 0;
     color: ${colors.white};
-    font-family: "Kanit", sans-serif;
+    font-family: 'Rubik', sans-serif;
 
     @media (max-width: 500px) {
-      font-size: 2rem;
+      font-size: 1rem;
     }
     @media (max-width: 380px) {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
   }
   & > p {
     padding-bottom: 2rem;
     @media (max-width: 380px) {
-      font-size: 1.6rem;
+      font-size: 1rem;
       line-height: unset;
     }
   }

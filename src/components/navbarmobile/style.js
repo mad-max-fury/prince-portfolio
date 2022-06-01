@@ -11,7 +11,7 @@ export const NavBarMobileContainer = styled.div`
   height: ${({ isOpen }) => (isOpen ? "fit-content" : "0")};
   padding: 2rem 0;
   padding-top: unset;
-  font-family: orbitron, sans-serif;
+  font-family: "Rubik", sans-serif;
 
   background-color: ${colors.main_color};
   display: flex;
@@ -48,7 +48,7 @@ export const LogoContainer = styled.div`
 
 export const CloseIcon = styled(VscClose)`
   color: #fff;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 600;
 `;
 
@@ -87,28 +87,37 @@ export const NavLink = styled(Link)`
   align-items: flex-start;
   justify-content: start;
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
   padding-left: 2rem;
   color: ${colors.white};
   transition: all 0.3s ease-in-out;
-  font-size: 3rem;
-
+  font-size: 1rem;
+  & > span {
+    font-size: inherit;
+  }
   &:hover {
     color: ${colors.nav_link};
     transition: all 0.3s ease-in-out;
+    & > span {
+      color: ${colors.nav_link};
+      transition: all 0.3s ease-in-out;
+    }
   }
   &.active {
     color: ${colors.nav_link};
     transition: all 0.3s ease-in-out;
+    & > span {
+      color: ${colors.nav_link};
+      transition: all 0.3s ease-in-out;
+    }
   }
   &.home {
-    font-size: 3rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    & > h4 {
+    & > h2 {
       font-size: inherit;
       font-weight: inherit;
       @media screen and (max-width: 540px) {
-        font-size: 2.1rem;
+        font-size: 1.25rem;
         font-weight: 600;
         font-style: normal;
       }
@@ -124,7 +133,7 @@ export const NavHashLink = styled(HashLink)`
   font-size: 1.5rem;
   justify-content: start;
   cursor: pointer;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   padding-left: 2rem;
 
   transition: all 0.3s ease-in-out;

@@ -23,24 +23,34 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-size: 3rem;
-
+  font-size: 1rem;
+  & > span {
+    font-size: inherit;
+  }
   &:hover {
     color: ${colors.nav_link};
     transition: all 0.3s ease-in-out;
+    & > span {
+      color: ${colors.nav_link};
+      transition: all 0.3s ease-in-out;
+    }
   }
   &.active {
     color: ${colors.nav_link};
     transition: all 0.3s ease-in-out;
+    & > span {
+      color: ${colors.nav_link};
+      transition: all 0.3s ease-in-out;
+    }
   }
   &.home {
-    font-size: 3rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    & > h4 {
+    & > h2 {
       font-size: inherit;
       font-weight: inherit;
       @media screen and (max-width: 540px) {
-        font-size: 2.1rem;
+        font-size: 1.25rem;
         font-weight: 600;
         font-style: normal;
       }
@@ -53,14 +63,14 @@ export const Bars = styled(RiMenu3Line)`
   @media (max-width: 840px) {
     display: flex;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding: 0 1rem;
   }
 `;
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   /* margin-right: 60px; */
   /*  */
@@ -86,10 +96,10 @@ export const NavBtnLink = styled.a`
   transition: all 0.3s ease-in-out;
   border: 1.5px solid ${colors.nav_link};
   border-radius: 10px;
-  font-family: "metropolis", sans-serif;
+  font-family: "Rubik", sans-serif;
   & > h1 {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
   @media (max-width: 840px) {
     display: none;

@@ -38,7 +38,7 @@ const ProjectCard = ({
 
 export { ProjectCard };
 const Heading = styled.h3`
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-style: Semi-Bold;
   font-weight: 500;
   font-size: 24px;

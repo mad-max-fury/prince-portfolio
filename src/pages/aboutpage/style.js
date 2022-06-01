@@ -25,7 +25,7 @@ export const AboutWrapper = styled.div`
 export const AboutHeader = styled.div`
   margin: 0 auto;
   & > h1 {
-    font-weight: 600;
+    font-weight: 400;
     margin: 1rem 0;
   }
   @media screen and (max-width: 700px) {
@@ -64,10 +64,10 @@ export const AboutMeDetails = styled.p`
   display: flex;
   flex-direction: column;
   text-align: start;
-  font-weight: 300;
-  font-family: Rubik;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
   width: 60%;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-style: normal;
   line-height: 25px;
 

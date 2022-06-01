@@ -11,11 +11,11 @@ const TextHeading = styled.h1`
   position: relative;
   width: fit-content;
   height: fit-content;
-  font-size: ${(props) => (props.size ? props.size : "5.9rem")};
+  font-size: ${(props) => (props.size ? props.size : "5.1rem")};
   margin: 0;
   padding: 0;
-  font-weight: 700;
-  font-family: Rubik;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
 
   color: ${colors.white};
   &:after {

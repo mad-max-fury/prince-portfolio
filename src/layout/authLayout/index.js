@@ -17,10 +17,10 @@ const AuthLayout = ({ children, showModal, setShowModal }) => {
 export { AuthLayout };
 
 const Container = styled.main`
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px - 1rem);
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
+  padding: 0rem calc((100vw - 1300px) / 2);
   background-color: ${colors.main_color};
   background-image: url(${patternBg});
   background-repeat: no-repeat;

@@ -42,12 +42,16 @@ export const WidgetWrap = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     & > span {
+      & > h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+      }
       @media screen and (max-width: 500px) {
         & > h1 {
-          font-weight: 600;
+          font-weight: 400;
           margin: 0 auto;
 
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       }
     }
@@ -56,7 +60,7 @@ export const WidgetWrap = styled.div`
 export const Widget = styled.div`
   width: fit-content;
   display: flex;
-  gap: 3.2rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 
@@ -86,7 +90,7 @@ export const Main = styled.main`
 `;
 
 export const Tab = styled.h2`
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff;
   padding: 15px 0;
