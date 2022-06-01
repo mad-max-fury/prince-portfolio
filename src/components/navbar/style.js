@@ -4,16 +4,22 @@ import { RiMenu3Line } from "react-icons/ri";
 import { colors } from "../../colors";
 
 export const Nav = styled.nav`
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
+  height: 96px;
+  width: 100%;
   z-index: 10;
   background-color: ${colors.secondary_color};
   position: sticky;
   top: 0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 `;
 export const NavLink = styled(Link)`
   color: ${colors.white};
@@ -43,6 +49,7 @@ export const NavLink = styled(Link)`
       transition: all 0.3s ease-in-out;
     }
   }
+
   &.home {
     font-size: 1.25rem;
     font-weight: 600;
@@ -50,7 +57,7 @@ export const NavLink = styled(Link)`
       font-size: inherit;
       font-weight: inherit;
       @media screen and (max-width: 540px) {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 600;
         font-style: normal;
       }
@@ -63,7 +70,7 @@ export const Bars = styled(RiMenu3Line)`
   @media (max-width: 840px) {
     display: flex;
     cursor: pointer;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     padding: 0 1rem;
   }
 `;

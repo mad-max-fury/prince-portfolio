@@ -7,28 +7,30 @@ const Navbar = () => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <Nav>
-      <NavMenu>
-        <NavLink to="/about" activeStyle>
-          <span>About</span>
-        </NavLink>
-        <NavLink to="/My-Project" activeStyle>
-          <span>My Project</span>
-        </NavLink>
-        <NavLink to="/contact-me" activeStyle>
-          <span>Contact me</span>
-        </NavLink>
-      </NavMenu>
-      <NavBtnWraps>
-        <NavLink to="/" activeStyle className={"home"}>
-          <h2>Prince Chijioke</h2>
-        </NavLink>
-        <NavBtnLink href="http://princechijioke.medium.com" activeStyle>
-          <h1>Visit my blog</h1>
-        </NavBtnLink>
-      </NavBtnWraps>
+      <div>
+        <NavMenu>
+          <NavLink to="/about" activeStyle>
+            <span>About</span>
+          </NavLink>
+          <NavLink to="/My-Project" activeStyle>
+            <span>My Project</span>
+          </NavLink>
+          <NavLink to="/contact-me" activeStyle>
+            <span>Contact me</span>
+          </NavLink>
+        </NavMenu>
+        <NavBtnWraps>
+          <NavLink to="/" activeStyle className={"home"}>
+            <h2>Prince Chijioke</h2>
+          </NavLink>
+          <NavBtnLink href="http://princechijioke.medium.com" activeStyle>
+            <h1>Visit my blog</h1>
+          </NavBtnLink>
+        </NavBtnWraps>
 
-      <Bars onClick={toggle} />
-      <NavBarMobile toggle={toggle} isOpen={isOpen} />
+        <Bars onClick={toggle} />
+        <NavBarMobile toggle={toggle} isOpen={isOpen} />
+      </div>
     </Nav>
   );
 };

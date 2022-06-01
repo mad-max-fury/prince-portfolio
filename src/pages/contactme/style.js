@@ -9,11 +9,12 @@ export const Container = styled(motion.main)`
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  gap: 1rem;
+  gap: 2rem;
   height: 70vh;
   @media screen and (max-width: 700px) {
     height: fit-content;
-    padding-top: 1rem;
+    padding-bottom: 4rem;
+    /* padding-top: 2rem; */
   }
 `;
 export const Inner = styled.div`
@@ -24,7 +25,6 @@ export const Inner = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
-
   max-width: 680px;
   margin: auto;
   & > h2 {
@@ -40,7 +40,7 @@ export const Paragraph = styled.p`
   font-size: 15px;
   font-weight: 300;
   line-height: 32px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #f0f0f0;
 `;
 export const TextWrap = styled.div`
@@ -56,7 +56,8 @@ export const TextWrap = styled.div`
   & > h1 {
     font-weight: 400;
     font-size: 2.5rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 export const ImageWrap = styled.div`
@@ -86,7 +87,7 @@ export const TextCon = styled.div`
     text-align: center;
     margin: 0;
     color: ${colors.white};
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 
     @media (max-width: 500px) {
       font-size: 1rem;

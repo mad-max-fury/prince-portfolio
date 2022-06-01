@@ -3,14 +3,21 @@ import { colors } from "../../colors";
 
 export const FootWrap = styled.div`
   height: 80px;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  @media (max-width: 500px) {
-    flex-direction: column;
-    padding-bottom: 1.6rem;
+
+  & > div {
+    width: 95%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    display: flex;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      padding-bottom: 1.6rem;
+    }
   }
 `;
 export const FootIcons = styled.div`
@@ -34,5 +41,11 @@ export const FootText = styled.div`
     text-decoration: none;
     font-size: 1rem;
     color: ${colors.nav_link};
+    @media (max-width: 5400px) {
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width: 5400px) {
+    font-size: 0.9rem;
   }
 `;

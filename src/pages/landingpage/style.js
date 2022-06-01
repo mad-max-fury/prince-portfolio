@@ -27,6 +27,9 @@ export const Inner = styled.div`
 
     & h1 {
       font-weight: 550;
+      @media screen and (max-width: 400px) {
+        font-weight: 400;
+      }
     }
   }
 `;

@@ -6,7 +6,7 @@ export const Container = styled(motion.main)`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1300px) {
     height: fit-content;
     padding-bottom: 4rem;
   }
@@ -18,8 +18,6 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  @media screen and (max-width: 700px) {
-  }
 `;
 
 export const AboutHeader = styled.div`
@@ -29,8 +27,11 @@ export const AboutHeader = styled.div`
     margin: 1rem 0;
   }
   @media screen and (max-width: 700px) {
-    padding: 28px 0 37px;
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -38,11 +39,17 @@ export const AboutDetails = styled.div`
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
-  gap: 4rem;
+
+  max-width: 1300px;
+  gap: 3rem;
   height: fit-content;
   margin: auto;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 95%;
   }
 `;
 
@@ -51,7 +58,10 @@ export const AboutImage = styled.img`
   height: 450px;
   border-radius: 15px;
   object-fit: cover;
-
+  @media screen and (min-width: 701px) and (max-width: 1000px) {
+    width: 100%;
+    margin: auto;
+  }
   @media screen and (max-width: 700px) {
     width: 100%;
     height: 380px;
@@ -80,6 +90,10 @@ export const AboutMeDetails = styled.p`
     font-weight: inherit;
   }
 
+  @media screen and (min-width: 701px) and (max-width: 1000px) {
+    width: 100%;
+    margin: auto;
+  }
   @media screen and (max-width: 700px) {
     width: 100%;
     margin: auto;

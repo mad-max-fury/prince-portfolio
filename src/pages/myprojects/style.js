@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { colors } from "../../colors";
-import { patternBg } from "../../assets";
 import { motion } from "framer-motion";
 export const Container = styled(motion.main)`
   height: 100%;
@@ -34,7 +33,6 @@ export const WidgetWrap = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-
   & > span {
     width: 100%;
     display: flex;
@@ -47,15 +45,24 @@ export const WidgetWrap = styled.div`
         font-weight: 400;
       }
       @media screen and (max-width: 500px) {
+        margin: 0 auto;
         & > h1 {
           font-weight: 400;
-          margin: 0 auto;
 
           font-size: 2.5rem;
         }
       }
     }
   }
+  @media screen and (max-width: 1318px) {
+    max-width: 90%;
+  }
+  @media screen and (max-width: 618px) {
+    flex-direction: column;
+    & > span {
+      flex-direction: column;
+    }
+  } ;
 `;
 export const Widget = styled.div`
   width: fit-content;
@@ -64,8 +71,8 @@ export const Widget = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 500px) {
-    margin: 2rem auto;
+  @media screen and (max-width: 1318px) {
+    margin: 2rem 0;
   }
 `;
 export const Main = styled.main`
@@ -73,14 +80,20 @@ export const Main = styled.main`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1318px) and (min-width: 800px) {
     height: fit-content;
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
     gap: 1rem;
     row-gap: 2rem;
-    //center items
+    place-items: center;
+  }
+  @media screen and (max-width: 800px) {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
+    gap: 1rem;
+    row-gap: 1rem;
     place-items: center;
   }
   @media screen and (max-width: 400px) {
