@@ -23,10 +23,11 @@ export const AboutWrapper = styled.div`
 export const AboutHeader = styled.div`
   margin: 0 auto;
   & > h1 {
-    font-weight: 400;
+    font-weight: 500;
     margin: 1rem 0;
+    font-size: 2rem;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     padding-top: 1rem;
     padding-bottom: 1.4rem;
 
@@ -46,7 +47,7 @@ export const AboutDetails = styled.div`
   margin: auto;
   @media screen and (max-width: 1000px) {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0rem;
   }
   @media screen and (max-width: 1300px) {
     width: 95%;
@@ -94,7 +95,7 @@ export const AboutMeDetails = styled.p`
     width: 100%;
     margin: auto;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     margin: auto;
     margin-top: 2rem;

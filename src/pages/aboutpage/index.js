@@ -23,7 +23,7 @@ const AboutMe = () => {
     >
       <AboutWrapper>
         <AboutHeader>
-          <Text tex="About Me" size={7} />
+          <Text tex="About Me" />
         </AboutHeader>
 
         <AboutDetails>

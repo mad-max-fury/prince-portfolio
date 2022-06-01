@@ -41,15 +41,14 @@ export const WidgetWrap = styled.div`
     flex-wrap: wrap;
     & > span {
       & > h1 {
-        font-size: 2.5rem;
-        font-weight: 400;
+        font-size: 2rem;
+        font-weight: 500;
       }
       @media screen and (max-width: 500px) {
         margin: 0 auto;
         & > h1 {
           font-weight: 400;
-
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
     }

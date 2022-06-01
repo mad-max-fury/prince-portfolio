@@ -54,9 +54,15 @@ export const TextWrap = styled.div`
   max-width: 680px;
   margin: 0 auto;
   & > h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-weight: 500;
+
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 700px) {
+    padding-top: 1rem;
+    padding-bottom: 1.4rem;
+
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 `;
