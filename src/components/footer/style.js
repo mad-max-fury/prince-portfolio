@@ -16,7 +16,6 @@ export const FootWrap = styled.div`
     display: flex;
     @media (max-width: 500px) {
       flex-direction: column;
-      padding-bottom: 1.6rem;
     }
   }
 `;

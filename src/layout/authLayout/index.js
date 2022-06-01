@@ -33,6 +33,7 @@ const Container = styled.main`
     height: fit-content;
     padding: 0.5rem calc((100vw - 90%) / 2);
     min-height: calc(100vh - 90px);
+    padding-bottom: 1.6rem;
   }
 `;
 const InnerChildren = styled.div`

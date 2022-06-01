@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     body{
       background:${colors.general_bg};
       height:fit-content ;
-     
+  
     
     }
   
